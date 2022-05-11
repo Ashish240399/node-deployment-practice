@@ -8,5 +8,5 @@ app.use(helmet());
 app.use(morgan('tiny'))
 app.use(cors());
 const userController=require("./controller/userController")
-app.use("/users",userController)
+app.use("/",userController)
 module.exports=app;
